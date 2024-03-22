@@ -1,3 +1,5 @@
 <div class="container p-1">
-  <app-card [ans_yes]="ans_yes" [ans_no]="ans_no"></app-card>
+  <div class="row">
+    <app-card class="col-md-6" [data]="item.body" [title]="item.title" [img]="item.img" *ngFor="let item of global"></app-card>
+  </div>
 </div>

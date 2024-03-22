@@ -1,13 +1,12 @@
 <div class="card mb-3  text-center">
   <div class="row justify-content-center">
-    <img src="assets/discurso.png" class="card-img-top w-50" alt="Respuestas">
+    <img [src]="img"  class="card-img-top w-50" alt="Image related">
   </div>
   <div class="card-body">
-    <h5 class="card-title">Estadisticas de respuestas</h5>
+    <h5 class="card-title">{{ title }}</h5>
     <div class="card-text">
       <div class="row">
-        <div class="col-6">Número de respuestas contestadas:{{ ans_yes }}</div>
-        <div class="col-6">Número de respuestas no contestadas:{{ ans_no }}</div>
+        <div class="col-10 offset-1" *ngFor="let item of data">{{ item.msg }} <b>{{ item.value }}</b></div>
       </div>
     </div>
     <p class="card-text"><small class="text-muted">Por Roberto Avila</small></p>

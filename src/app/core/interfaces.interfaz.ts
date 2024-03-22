@@ -1,3 +1,27 @@
+export interface DataStat {
+  data:    Flights;
+  message: string;
+  status:  boolean;
+}
+
+export interface Flights {
+  aerolinea_max_por_dia: string[];
+  aerolinea_max_vuelos:  string;
+  aeropuerto_max_vuelos: string;
+  dia_max_vuelos:        string;
+}
+
+export interface Content {
+  msg: string;
+  value: string;
+}
+
+export interface DataCard {
+  body: Content[];
+  title: string;
+  img: string;
+}
+
 export interface IResp {
   status:        boolean;
   data:          Data;

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Content } from 'src/app/core/interfaces.interfaz';
 
 @Component({
   selector: 'app-card',
@@ -8,8 +9,10 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input()
-  public ans_yes: number = 0;
+  public data: Content[] = [];
   @Input()
-  public ans_no: number = 0;
+  public title: string = '';
+  @Input()
+  public img: string = '';
 
 }
